@@ -1,9 +1,9 @@
-
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>For Linda</title>
+    <title>Bootstrap demo</title>
     <link
     rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -35,17 +35,28 @@
         color: white;
       }
 
-      #close{
-        color: white;
-      }
     </style>
 </head>
   <body>
-  <i id="message" class="fas fa-envelope" onclick="changeIcon(this)" aria-hidden="true" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i>
+    <!-- Button trigger modal -->
+  <i id="message" class="fas fa-envelope" onclick="changeIcon(this)" aria-hidden="true" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
 
-
-
-  
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Pesan(2)</h3>
+      </div>
+      <div class="modal-body">
+        Walah walah, kita ketemu lagi niccchh, sebelum lanjut ke pesan selanjutmya, kamu udh siap belum?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Udah dongg</button>
+      </div>
+    </div>
+  </div>
+</div> 
   <!-- Modal -->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -54,7 +65,7 @@
           <h3 class="modal-title" id="staticBackdropLabel">Pesan (1)</h3>
         </div>
         <div class="modal-body">
-          Walah walah, kita ketemu lagi niccchh, sekarang Linda tolong tekan ikon whatsapp ini dongg
+          Wii berarti udh siap nichh, sekarang Linda tolong tekan ikon whatsapp ini dongg
           <a href="https://api.whatsapp.com/send/?phone=6281247665625&text=%20Hai%20Yuda%20Ganteng">
             <i class="fab fa-whatsapp"></i>
           </a>
@@ -62,8 +73,10 @@
       </div>
     </div>
   </div>
+
   <script>
-        alert("Halo Linda, thankyou ya udh mau buka link yang saia kirim, coba kamu tekan ikon amplopnya")
+
+      alert("Halo Linda, thankyou ya udh mau buka link yang saia kirim, coba kamu tekan ikon amplopnya")
         let changeIcon = function(icon) {
           icon.classlist.toggle('fa-envelope-open')
         }
